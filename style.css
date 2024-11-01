@@ -1,0 +1,102 @@
+body {
+    background:url('https://images.unsplash.com/photo-1502825305473-fedeffa5b12c?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(138, 136, 136, 0.3);
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 99px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(186, 180, 204, 0.785);
+    text-align: center;
+    transition: 3.0s ease-in-out;
+}
+
+h2, label, p {
+    color: #ffffff;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 247, 247);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+button {
+    background: #60506c;
+    color: rgb(244, 244, 244);
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 80px;
+    font-size: 15px;
+    transition: 0.4s ease-in-out;
+}
+
+button:hover {
+    background: #a38bc0;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
